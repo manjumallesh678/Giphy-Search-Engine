@@ -14,7 +14,7 @@ function rerender(input1){
     if(pre){
         document.querySelector(".js-container").innerHTML = "";
     }
-    let url = `http://api.giphy.com/v1/gifs/search?q=${input1}&api_key=dc6zaTOxFJmzC`;
+    let url = `https://api.giphy.com/v1/gifs/search?q=${input1}&api_key=dc6zaTOxFJmzC`;
     let giphy = new XMLHttpRequest();
     giphy.open("GET",url);
     giphy.send();
